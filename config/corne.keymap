@@ -13,7 +13,14 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        f3 {
+            bindings = <&kp F3>;
+            key-positions = <25 4>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
