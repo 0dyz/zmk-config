@@ -19,6 +19,7 @@
         f3 {
             bindings = <&kp F3>;
             key-positions = <25 4>;
+            layers = <0>;
         };
     };
 
