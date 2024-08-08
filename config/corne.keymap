@@ -59,19 +59,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL    &kp AT      &kp HASH    &kp DLLR      &kp PRCNT        &kp CARET  &kp AMPS   &kp STAR  &kp LPAR  &kp RPAR  &kp DEL
-&kp LCTRL  &trans      &trans      &trans      &trans        &trans           &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &bt BT_CLR  &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 0  &bt BT_DISC 0    &kp UNDER  &kp PLUS   &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
-                                   &kp LGUI    &mo 3         &kp SPACE        &kp RET    &trans     &kp RALT
+&kp TAB    &kp EXCL    &kp AT        &kp HASH      &kp DLLR      &kp PRCNT        &kp CARET  &kp AMPS   &kp STAR  &kp LPAR  &kp RPAR  &kp DEL
+&kp LCTRL  &trans      &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1     &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
+&kp LSHFT  &bt BT_CLR  &bt BT_PRV    &bt BT_NXT    &bt BT_SEL 0  &bt BT_DISC 0    &kp UNDER  &kp PLUS   &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
+                                     &kp LGUI      &mo 3         &kp SPACE        &kp RET    &trans     &kp RALT
             >;
         };
 
         layer_3 {
             bindings = <
-&trans  &trans  &rgb_ug RGB_EFF  &rgb_ug RGB_SPI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans           &trans           &rgb_ug RGB_BRD  &rgb_ug RGB_BRI    &trans  &trans  &trans  &trans  &trans  &trans
-                                 &trans           &rgb_ug RGB_TOG  &trans             &trans  &trans  &trans
+&trans  &trans  &rgb_ug RGB_EFF  &rgb_ug RGB_SPI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI    &kp F9  &kp F10  &kp F11  &kp F12  &trans  &trans
+&trans  &trans  &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI    &kp F5  &kp F6   &kp F7   &kp F8   &trans  &trans
+&trans  &trans  &trans           &trans           &rgb_ug RGB_BRD  &rgb_ug RGB_BRI    &kp F1  &kp F2   &kp F3   &kp F4   &trans  &trans
+                                 &trans           &rgb_ug RGB_TOG  &trans             &trans  &trans   &trans
             >;
         };
     };
