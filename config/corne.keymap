@@ -13,15 +13,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        adjust {
-            bindings = <&mo 3>;
-            key-positions = <37 40>;
-            layers = <0>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -73,7 +65,7 @@
 &kp TAB    &kp EXCL    &kp AT        &kp HASH      &kp DLLR      &kp PRCNT        &kp CARET  &kp AMPS   &kp STAR  &kp LPAR  &kp RPAR  &kp DEL
 &kp LCTRL  &trans      &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1     &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
 &kp LSHFT  &bt BT_CLR  &bt BT_PRV    &bt BT_NXT    &bt BT_SEL 0  &bt BT_DISC 0    &kp UNDER  &kp PLUS   &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
-                                     &kp LGUI      &trans        &kp SPACE        &kp RET    &trans     &kp RALT
+                                     &mo 3         &trans        &kp SPACE        &kp RET    &trans     &kp RALT
             >;
         };
 
@@ -87,12 +79,5 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        ADUST_LAYER {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
