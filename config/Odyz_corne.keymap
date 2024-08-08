@@ -69,7 +69,8 @@
             >;
         };
 
-        ADJUST_LAYER {
+        adjust_layer {
+            label = "Fkeys";
             bindings = <
 &rgb_ug RGB_TOG  &trans  &rgb_ug RGB_EFF  &rgb_ug RGB_SPI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI    &kp F9  &kp F10  &kp F11  &kp F12  &trans  &soft_off
 &bl BL_TOG       &trans  &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI    &kp F5  &kp F6   &kp F7   &kp F8   &trans  &trans
